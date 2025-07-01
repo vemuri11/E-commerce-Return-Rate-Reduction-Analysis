@@ -1,30 +1,54 @@
-# E-commerce Return Rate Reduction Analysis
+# 🛍️ E-commerce Return Rate Reduction Analysis
 
-This project aims to analyze and reduce return rates in an e-commerce environment using machine learning models and data-driven insights.
+## 📌 Objective
+This project aims to analyze and reduce the product return rate in an e-commerce environment. The focus is on identifying key factors behind returns across product categories, regions, and marketing channels and building a predictive model to flag high-risk products.
 
-## Contents
-- Cleaned Dataset
-- Jupyter Notebook with full EDA and ML pipeline
-- Trained ML model (Random Forest)
-- Report (PDF and Word)
-- PowerPoint Presentation
-- Streamlit Dashboard (Optional)
-- Requirements and Setup Instructions
+---
 
-## How to Run
-1. Install dependencies:
-   ```bash
-   pip install -r requirements.txt
-   ```
-2. Open the notebook in Jupyter:
-   ```
-   notebooks/analysis_notebook.ipynb
-   ```
-3. Launch the Streamlit dashboard (if included):
-   ```bash
-   streamlit run dashboard/app.py
-   ```
+## 🧰 Tools & Technologies
+- **Python** (Pandas, NumPy, Scikit-learn)
+- **Power BI**
+- **SQL**
 
-## Authors
-~ Bhavana Vemuri
+---
 
+## 📊 Project Pipeline
+
+### 1. Data Cleaning
+- Cleaned orders and returns datasets
+- Merged relevant tables, removed duplicates, and handled null values
+
+### 2. Exploratory Data Analysis
+- Analyzed return rates by:
+  - Product Category
+  - Supplier
+  - Geographic Region
+  - Marketing Channel
+
+### 3. Predictive Modeling
+- **Logistic Regression** to predict the probability of a product being returned
+- Evaluated using Accuracy, Precision, Recall, and AUC-ROC
+
+### 4. Power BI Dashboard
+- Interactive dashboard with:
+  - Return rate trends
+  - High-return categories/suppliers
+  - Drill-through filters for deeper insights
+
+### 5. Deliverables
+- ✅ Python Codebase for preprocessing and modeling
+- ✅ Power BI dashboard for return insights
+- ✅ CSV of high-risk products (return probability > 60%)
+
+---
+
+## 📁 Project Structure
+
+📦 E-commerce-Return-Rate-Reduction-Analysis
+├── 📂 data/ # Raw and cleaned datasets
+├── 📂 models/ # Trained model (joblib)
+├── 📂 outputs/ # High-risk products CSV
+├── 📂 visuals/ # Screenshots (optional)
+├── 📜 analysis_notebook.ipynb
+├── 📜 dashboard.pbix
+└── 📜 README.md
