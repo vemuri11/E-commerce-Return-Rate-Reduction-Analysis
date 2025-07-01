@@ -1,4 +1,3 @@
-
 # E-commerce Return Rate Reduction Analysis
 
 This project aims to analyze and reduce return rates in an e-commerce environment using machine learning models and data-driven insights.
@@ -27,5 +26,5 @@ This project aims to analyze and reduce return rates in an e-commerce environmen
    ```
 
 ## Authors
-- Your Name
+~ Bhavana Vemuri
 
