@@ -1,1 +1,63 @@
-PLACEHOLDER FILE
+E-commerce Return Rate Reduction Analysis
+------------------------------------------
+
+1. Project Title:
+   E-commerce Return Rate Reduction Analysis
+
+2. Objective:
+   To identify the reasons behind product returns and analyze return rates across product categories, geographic regions, and marketing channels. 
+   Additionally, build a predictive model to forecast return probability and develop a Power BI dashboard to visualize insights and high-risk items.
+
+3. Tools and Technologies Used:
+   - Python (Pandas, NumPy, Scikit-learn, Matplotlib, Seaborn)
+   - SQL
+   - Power BI
+
+4. Dataset Description:
+   - Orders Dataset: Includes product details, customer info, category, order dates, and region.
+   - Returns Dataset: Contains information about returned items and reasons (if available).
+
+5. Methodology:
+
+   A. Data Cleaning:
+      - Removed duplicates and null values.
+      - Standardized formats and merged datasets.
+      - Feature engineering: return_flag, days_to_return.
+
+   B. Exploratory Data Analysis (EDA):
+      - Analyzed return rates by category, region, and channel.
+      - Visualized high-return product types and suppliers.
+      - Identified trends using bar charts and heatmaps.
+
+   C. Predictive Modeling:
+      - Target variable: Return (1) or Not Return (0)
+      - Features: Category, Supplier, Price, Delivery Time, Region, Marketing Channel
+      - Model: Logistic Regression
+      - Evaluation: Accuracy, Precision, Recall, AUC-ROC
+      - Outcome: Probability of return per product
+
+   D. Power BI Dashboard:
+      - Interactive dashboard with filters (Category, Region, Supplier)
+      - Visualizations of return trends, risk scores, and high-risk SKUs
+      - Drill-through pages for detailed product analysis
+
+6. Key Findings:
+   - Certain categories and suppliers have significantly higher return rates.
+   - Products with longer delivery times are more likely to be returned.
+   - Returns are also higher in specific regions and via certain marketing channels.
+
+7. Deliverables:
+   - Python codebase for data cleaning, analysis, and modeling
+   - Power BI dashboard with interactive visualizations and filters
+   - CSV of high-risk products with predicted return probability > 0.6
+
+8. Business Impact:
+   - Helps reduce operational cost from excessive returns
+   - Supports decision-making for inventory, marketing, and quality control
+   - Enables targeting high-risk products with better size guides, quality checks, and marketing strategies
+
+9. Conclusion:
+   The project successfully implemented a data-driven approach to identify and reduce return rates in e-commerce. The logistic model and dashboard empower stakeholders to take actionable steps in reducing product returns.
+
+10. GitHub Repository:
+    https://github.com/vemuri11/E-commerce-Return-Rate-Reduction-Analysis
